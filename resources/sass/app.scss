@@ -1,0 +1,458 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+// Variables
+@import 'variables';
+// Login
+@import 'login';
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+//Toastr
+@import "~toastr/toastr";
+//bootstrap daterangerpicker
+@import "~bootstrap-daterangepicker/daterangepicker.css";
+//select2
+@import "~select2/src/scss/core";
+@import "~select2-bootstrap4-theme/src/select2-bootstrap4";
+
+//#conteudo {
+//    display: none;
+//}
+
+h4, .h4 {
+    font-size: 1.1rem;
+}
+
+#navbarSupportedContent {
+    font-size: .9rem;
+}
+
+#dataHora {
+    font-size: .8rem;
+}
+
+.dropdown-menu {
+    font-size: .88rem;
+}
+
+[v-cloak] {
+    display: none; // ocultar quem tem essa diretiva até o Vue carregar
+}
+
+.dropdown-toggle {
+    color: $white !important;
+}
+
+.dropdown-toggle:hover {
+    color: #CCCCCC !important;
+
+}
+
+//.dropdown-toggle{
+//    color: $white !important;
+//}
+
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active,
+.dropdown-item.active, .dropdown-item:active {
+    background-color: $marrom;
+    color: $white !important;
+}
+
+.autocomplete-result.is-active,
+.autocomplete-result:hover {
+    background-color: $marrom;
+    color: $white;
+}
+
+.titulo {
+    padding-bottom: 2.5px;
+    border-bottom: 1px solid $yellow;
+}
+
+.navtopo {
+    margin-bottom: 1em;
+    -webkit-box-shadow: 0px 1px 1px #999999;
+    -moz-box-shadow: 0px 1px 1px #999999;
+    box-shadow: 0px 1px 1px #999999;
+}
+
+// Tabela
+.table {
+    font-size: .8rem;
+}
+
+.table-responsive {
+    margin-top: 1em;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+}
+
+.btnFormExcluir, .btnFormAlterar {
+    margin-bottom: 5px;
+}
+
+.navbar-laravel {
+    background-color: $white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+// Modal Customizaçao
+.modal-header {
+    background: $marrom;
+    color: $white
+}
+
+.btClose {
+    color: $white
+}
+
+.text-default {
+    color: $marrom !important;
+}
+
+hr.bg-warning {
+    background-color: $marrom !important;
+}
+
+.bg-default {
+    background: $marrom !important;
+    color: $white;
+}
+
+.btn-outline-default {
+    color: $marrom;
+    background-color: transparent;
+    background-image: none;
+    border-color: $marrom;
+}
+
+.btn-outline-default:hover {
+    color: $white;
+    background-color: $marrom;
+    border-color: $marrom;
+}
+
+.btn-default {
+    color: $white;
+    background-color: $marrom;
+    border-color: $marrom;
+}
+
+.btn-default:hover {
+    color: $white;
+    background-color: $marromHover;
+    border-color: $marromHover;
+}
+
+.btn-default:focus, .btn-default.focus {
+    box-shadow: 0 0 0 0.2rem rgba(101, 50, 50, 0.5);
+}
+
+.btn-default.disabled, .btn-default:disabled {
+    color: $white;
+    background-color: $marrom;
+    border-color: $marrom;
+}
+
+.btn-default:not(:disabled):not(.disabled):active, .btn-default:not(:disabled):not(.disabled).active,
+.show > .btn-default.dropdown-toggle {
+    color: $white;
+    background-color: $marrom;
+    border-color: $marrom;
+}
+
+.btn-default:not(:disabled):not(.disabled):active:focus, .btn-default:not(:disabled):not(.disabled).active:focus,
+.show > .btn-default.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(101, 50, 50, 0.5);
+}
+
+// Footer
+.footer {
+    margin-top: 20px;
+    width: 100%;
+    height: 60px; /* Set the fixed height of the footer here */
+    line-height: 60px; /* Vertically center the text there */
+    //background-color: #f5f5f5;
+}
+
+
+.table th, .table td {
+    padding: 0.25rem;
+    font-size: 0.96em;
+}
+
+// Input Bottoes de formularios
+.btn {
+    padding: 0.275rem 0.75rem;
+    font-size: .78rem;
+    line-height: 1.3;
+}
+
+.form-control {
+    height: 1.7rem;
+    font-size: 0.8rem;
+}
+
+.input-group-prepend {
+    height: 1.7rem;
+}
+
+.input-group > .form-control:not(:first-child), .input-group > .custom-select:not(:first-child) {
+    height: 1.7rem;
+}
+
+.input-group > .form-control, .input-group > .form-control-plaintext, .input-group > .custom-select, .input-group > .custom-file {
+    height: 1.7rem;
+    font-size: .85rem;
+}
+
+.input-group > .form-control:not(:first-child), .input-group > .custom-select:not(:first-child) {
+    height: 1.7rem;
+    line-height: 1;
+    font-size: 0.8rem;
+}
+
+.input-group > .input-group-prepend > .btn, .input-group > .input-group-prepend > .input-group-text, .input-group > .input-group-append:not(:last-child) > .btn, .input-group > .input-group-append:not(:last-child) > .input-group-text, .input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle), .input-group > .input-group-append:last-child > .input-group-text:not(:last-child) {
+    height: 1.7rem;
+    font-size: .8rem;
+}
+
+label {
+    margin-bottom: 0.1rem;
+    font-size: 0.9rem;
+}
+
+fieldset {
+    border: 1px solid #ddd !important;
+    margin-bottom: 20px;
+    xmin-width: 0;
+    padding: 10px;
+    position: relative;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    padding-left: 10px !important;
+}
+
+legend {
+    font-size: .76rem;
+    margin-bottom: 0px;
+    width: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px 1em 5px 1em;
+    background-color: $marrom;
+    color: $white;
+}
+
+.modal-content {
+    border-radius: 0.5rem;
+}
+
+// Modal
+.modal-header {
+    background: $marrom;
+    color: #ffffff;
+    padding: .4rem 1.2rem .4rem 1.2rem;
+}
+
+.modal-title {
+    font-size: 1rem;
+}
+
+// Toggle Sim e não
+
+.switchToggle input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+.switchToggle label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 80px;
+    max-width: 80px;
+    height: 30px;
+    background: $danger;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+
+.switchToggle label:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 26px;
+    height: 26px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+.switchToggle input:checked + label, .switchToggle input:checked + input + label {
+    background: $marrom;
+}
+
+.switchToggle input + label:before, .switchToggle input + input + label:before {
+    content: 'Inativo';
+    position: absolute;
+    top: 5px;
+    left: 35px;
+    width: 26px;
+    height: 26px;
+    border-radius: 90px;
+    transition: 0.3s;
+    text-indent: 0;
+    color: $white;
+}
+
+.switchToggle input:checked + label:before, .switchToggle input:checked + input + label:before {
+    content: 'Ativo';
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 26px;
+    height: 26px;
+    border-radius: 90px;
+    transition: 0.3s;
+    text-indent: 0;
+    color: #fff;
+}
+
+.switchToggle input:checked + label:after, .switchToggle input:checked + input + label:after {
+    left: calc(100% - 2px);
+    transform: translateX(-100%);
+}
+
+.switchToggle label:active:after {
+    width: 60px;
+}
+
+.toggle-switchArea {
+    margin: 10px 0 10px 0;
+}
+
+// Outras Mudanças
+.form-check-label {
+    cursor: pointer;
+}
+
+.btn-group {
+    white-space: nowrap;
+}
+
+.btn-group .btn {
+    float: none;
+    display: inline-block;
+}
+
+.btn + .dropdown-toggle {
+    margin-left: -4px;
+}
+
+.table-responsive {
+    overflow-y: visible !important;
+}
+
+
+// Caret em dropdown
+.dropdown-menu-arrow {
+    top: -25px;
+    left: 20%;
+    width: 0;
+    height: 0;
+    position: relative;
+}
+
+.dropdown-menu-arrow:before,
+.dropdown-menu-arrow:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-width: 7px 8px;
+    border-style: solid;
+    border-color: transparent;
+    z-index: 1001;
+}
+
+.dropdown-menu-arrow:after {
+    bottom: -18px;
+    right: -8px;
+    border-bottom-color: #fff;
+}
+
+.dropdown-menu-arrow:before {
+    bottom: -17px;
+    right: -8px;
+    border-bottom-color: rgba(0, 0, 0, .15);
+}
+
+// Navs (Tabs) Pill
+.nav-tabs .nav-link {
+    border-radius: 0px;
+    font-size: .9rem; //Remover se  Felipe nao gostar
+    color: $marrom;
+    background-color: rgba(24, 64, 86, 0.3);
+    transition: background-color 0.2s ease;
+}
+
+.nav-tabs > li:nth-child(1) > a {
+    border-top-left-radius: 0.5rem;
+}
+
+.nav-tabs > li:nth-last-child(1) > a {
+    border-top-right-radius: 0.5rem;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .show > .nav-link {
+    color: $white;
+    background-color: $marrom;
+    border-color: transparent;
+}
+
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+    border-color: transparent;
+    background-color: $marromHover;
+    color: $white;
+    transition: background-color 0.2s ease;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: $white;
+    background-color: $marrom;
+}
+
+.nav-link:hover {
+    //color: $marromHover;
+    color: $marromHover;
+    transition: color 0.2s ease;
+    //background-color: $marromHover;
+}
+
+.tab-content {
+    border: 1px solid #DDD;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.textPlain {
+    background: transparent;
+    border: none;
+}
+
+.textPlain:read-only {
+    background: transparent;
+    border: none;
+}
+
+.btnPlain, .btnPlain:hover, .btnPlain:active, .btnPlain:visited, .btnPlain:focus {
+    background: transparent !important;
+    border: none !important;
+}
