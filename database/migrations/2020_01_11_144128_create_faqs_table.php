@@ -15,13 +15,11 @@ class CreateFaqsTable extends Migration
     {
         Schema::create('faqs', function (Blueprint $table) {
             $table->increments('id');
-            $table->unsignedInteger('curso_id');
             $table->text('pergunta');
             $table->text('resposta');
             $table->boolean('ativo');
             $table->timestamps();
 
-            $table->foreign('curso_id')->references('id')->on('cursos')->onDelete('cascade');
         });
     }
 

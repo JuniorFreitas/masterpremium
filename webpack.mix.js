@@ -5,7 +5,6 @@ mix
     //Configurações
     .js('resources/js/g/configuracoes/habilidades/app.js', 'public/js/g/habilidades/')
     .js('resources/js/g/configuracoes/papeis/app.js', 'public/js/g/papeis/')
-    .js('resources/js/g/configuracoes/horario-acesso/app.js', 'public/js/g/horario-acesso/')
     //Usúarios
     .js('resources/js/g/usuarios/usuarios/app.js', 'public/js/g/usuarios/')
     .js('resources/js/g/usuarios/alterar-senha/app.js', 'public/js/g/alterar-senha/')
